@@ -1,0 +1,6 @@
+#!/bin/sh
+#script to launch jupyter lab from workspace directory
+
+source ~/.venv/jlab/bin/activate
+cd ~/workspace
+jupyter lab

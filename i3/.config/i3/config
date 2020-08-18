@@ -1,0 +1,154 @@
+set $mod Mod4
+set $wp /home/mukhunth/Pictures/Wallpapers/art-4.png
+set $fg #ffffff
+set $bg #000000
+set $accent #00ff66
+set $sep " | "
+
+font pango:DejaVu Sans Mono 10
+exec_always --no-startup-id picom --experimental-backends -bc
+exec --no-startup-id feh --bg-fill $wp
+for_window [class="Blueman-manager" instance="blueman-manager"] floating enable
+for_window [class="mpv" instance="gl"] floating enable
+
+bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+d exec --no-startup-id dmenu_run -nf '#00ff66' -nb '#000000' -sf '#000000' -sb '#00ff66' -fn "dejavu sans mono:size=11" -b
+bindsym $mod+f fullscreen toggle
+bindsym $mod+grave exec --no-startup-id exitmenu
+bindsym $mod+q kill
+bindsym $mod+s [urgent=latest] focus
+bindsym $mod+e split toggle
+bindsym $mod+Shift+e layout toggle split
+bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+space floating toggle
+floating_modifier $mod
+
+gaps inner 15
+gaps outer 0
+bindsym $mod+i gaps inner current plus 5
+bindsym $mod+o gaps outer current plus 5
+bindsym $mod+Shift+i gaps inner current minus 5
+bindsym $mod+Shift+o gaps outer current minus 5
+smart_borders on
+for_window [class="^.*"] border pixel 1
+# class                 border  backgr. text    indicator child_border
+client.focused          #4c7899 #285577 #ffffff #185eb4   #13498b
+
+set $ws1 "1:"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8:"
+set $ws9 "9:"
+set $ws10 "10:"
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8 exec --no-startup-id pidof spotify || spotify
+bindsym $mod+9 workspace number $ws9 exec --no-startup-id pidof dolphin || dolphin
+bindsym $mod+0 workspace number $ws10 exec --no-startup-id pidof firefox || firefox
+for_window [class="Spotify"] move --no-auto-back-and-forth to workspace $ws8
+assign [class="dolphin"] $ws9
+assign [class="firefox"] $ws10
+
+bar {
+    status_command i3blocks
+    position top
+    height 50
+    tray_output none
+    separator_symbol $sep
+    strip_workspace_numbers yes
+    font pango:FontAwesome 10
+    colors {
+    background $bg
+    statusline $fg
+    separator $accent
+
+    # class            border backgr. text
+    focused_workspace  $bg    $accent $bg
+    inactive_workspace $bg    $bg     #888888
+    }
+}
+
+# Plasma compatibility improvements
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [title="Desktop — Plasma"] kill; floating enable; border none
+for_window [class="yakuake"] floating enable
+for_window [class="systemsettings"] floating enable
+for_window [class="plasmashell"] floating enable
+for_window [class="Plasma"] floating enable; border none
+for_window [title="plasma-desktop"] floating enable; border none
+for_window [title="win7"] floating enable; border none
+for_window [class="krunner"] floating enable; border none
+for_window [class="Kmix"] floating enable; border none
+for_window [class="Klipper"] floating enable; border none
+for_window [class="Plasmoidviewer"] floating enable; border none
+for_window [class="plasmashell" window_type="notification"] border none
+no_focus [class="plasmashell" window_type="notification"]
+for_window [class="plasmashell" window_type="dock"] border none
+no_focus [class="plasmashell" window_type="dock"]
+for_window [class="plasmashell" window_type="on_screen_display"] border none
+no_focus [class="plasmashell" window_type="on_screen_display"]
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# resize focused window
+bindsym $mod+Mod1+h resize shrink width 10
+bindsym $mod+Mod1+j resize shrink height 10
+bindsym $mod+Mod1+k resize grow height 10
+bindsym $mod+Mod1+l resize grow width 10
+bindsym $mod+Mod1+Left resize shrink width 10
+bindsym $mod+Mod1+Down resize shrink height 10
+bindsym $mod+Mod1+Up resize grow height 10
+bindsym $mod+Mod1+Right resize grow width 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# Use pactl to adjust volume in PulseAudio.
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart

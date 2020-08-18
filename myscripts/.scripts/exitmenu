@@ -1,0 +1,9 @@
+#!/bin/sh
+#exit menu in dmenu
+
+choice=$(echo -e "No\nLock\nSuspend\nLogout\nReboot\nShutdown" | dmenu -nf '#ff0000' -nb '#000000' -sf '#000000' -sb '#ff0000' -fn "dejavu sans mono:size=11" -p "Exit?" -b)
+[ $choice == "Lock" ] && $(loginctl lock-session)
+[ $choice == "Suspend" ] && $(systemctl suspend)
+[ $choice == "Logout" ] && $(qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout -1 -1 -1)
+[ $choice == "Reboot" ] && $(systemctl reboot)
+[ $choice == "Shutdown" ] && $(systemctl poweroff)

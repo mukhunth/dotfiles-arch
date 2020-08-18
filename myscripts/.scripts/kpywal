@@ -1,0 +1,5 @@
+#!/bin/sh
+# to apply copy pywal generated scheme to konsole
+ 
+rm -f ~/.local/share/konsole/colors-konsole.colorscheme
+cp ~/.cache/wal/colors-konsole.colorscheme ~/.local/share/konsole/
