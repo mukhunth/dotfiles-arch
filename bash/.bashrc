@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 # Prompt
-PS1='\[\e[01;31m\][\[\e[01;32m\]\u\[\e[00;34m\]@\[\e[01;34m\]arch\[\e[01;35m\] \W\[\e[01;31m\]]\[\e[00;38m\]\$\[\e[m\] '
+PS1='\[\e[01;31m\][\[\e[01;32m\]\u\[\e[01;34m\]@\[\e[01;34m\]arch\[\e[01;35m\] \W\[\e[01;31m\]]\[\e[00;38m\]\$\[\e[m\] '
 # put this in /etc/bash.bashrc for root prompt -> PS1='\[\e[01;31m\][root\[\e[01;32m\] \W\[\e[01;38m\]]\$\[\e[m\] '
 
 # Settings

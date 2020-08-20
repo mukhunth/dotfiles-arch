@@ -7,7 +7,7 @@ backup Steam Games to HDD
 PACSTRAP: linux linux-firmware intel-ucode base base-devel vim
 ARCH-CHROOT:
 reflector [update mirrorlist]
-grub efibootmgr os-prober
+grub efibootmgr os-prober ntfs-3g
 networkmanager [enable service]
 man-db man-pages bash-completion
 root passwd
@@ -29,16 +29,15 @@ xorg-server xorg-xinit
 plasma [select from group]
 sddm [enable service]
 alsa-utils pulseaudio-alsa pulseaudio-bluetooth blueman
-konsole gvim kvantum-qt5 gnome-themes-extra
-ttf-inconsolata awesome-terminal-fonts powerline-fonts
+konsole dolphin ark unrar spectacle kvantum-qt5 gnome-themes-extra
+gvim ttf-inconsolata awesome-terminal-fonts powerline-fonts
 RESTART
 nvidia nvidia-utils nvidia-settings
 AUR: yay optimus-manager optimus-manager-qt
 [configure optimus-manager, edit pulseaudio settings]
 RESTART
 firefox mpv gthumb steam qbittorrent syncthing
-dolphin ark unrar partitionmanager spectacle
-libreoffice zathura zathura-djvu zathura-pdf-mupdf
+zathura zathura-djvu zathura-pdf-mupdf libreoffice
 bashtop nvtop youtube-dl
 AUR: ttf-ms-fonts snapd vscode
 SNAP: spotify pycharm
@@ -66,4 +65,4 @@ Exec=env KDEWM=/usr/bin/i3 /usr/bin/startplasma-x11
 DesktopNames=KDE
 Name=Plasma i3
 Comment=Plasma with i3
-X-KDE-PluginInfo-Version=5.19.5
+X-KDE-PluginInfo-Version=5.19.4

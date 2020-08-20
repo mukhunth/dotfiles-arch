@@ -7,14 +7,14 @@ signal=10
 [gpu-load]
 command=~/.scripts/i3blocks/gpu-load
 label=GPU
-interval=5
+interval=10
 #min_width=GPU 100% 100% 100% 100%
 #T_WARN=70
 #T_CRIT=90
 
 [cpu_usage]
 command=~/.scripts/i3blocks/cpu_usage
-interval=5
+interval=10
 LABEL=CPU
 #min_width=CPU: 100.00%
 #T_WARN=50
@@ -23,7 +23,7 @@ LABEL=CPU
 
 [memory]
 command=free -h | awk '/^Mem:/ {print "RAM "$3}'
-interval=5
+interval=10
 
 [volume-pulseaudio]
 command=~/.scripts/i3blocks/volume-pulseaudio
@@ -40,8 +40,8 @@ signal=1
 #AUDIO_LOW_THRESH=0
 #AUDIO_LOW_SYMBOL='<'
 #AUDIO_DELTA=5
-#DEFAULT_COLOR="#ffffff"
-#MUTED_COLOR="#a0a0a0"
+DEFAULT_COLOR="#ebdbb2"
+MUTED_COLOR="#a89984"
 #USE_ALSA_NAME=0
 #USE_DESCRIPTION=0
 ## SUBSCRIBE=1 requires interval=persist and always uses LONG_FORMAT
@@ -54,5 +54,5 @@ interval=30
 
 [time]
 command=date +%b' '%d' '%a' '%I:%M%p
-interval=5
+interval=10
 color=#00ff66
