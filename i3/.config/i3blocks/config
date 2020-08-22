@@ -3,22 +3,23 @@ color=#ebdbb2
 [mediaplayer]
 command=~/.scripts/i3blocks/mediaplayer
 instance=spotify
+label=
 interval=5
 signal=10
 
 [gpu-load]
 command=~/.scripts/i3blocks/gpu-load
-label=GPU
+label= GPU
 interval=10
 
 [cpu_usage]
 command=~/.scripts/i3blocks/cpu_usage
 interval=10
-LABEL=CPU
+LABEL= CPU
 DECIMALS=1
 
 [memory]
-command=free -h | awk '/^Mem:/ {print "RAM "$3}'
+command=free -h | awk '/^Mem:/ {print " RAM "$3}'
 interval=10
 
 [volume-pulseaudio]
@@ -35,7 +36,8 @@ markup=pango
 interval=30
 
 [date]
-command=date +'  '%a' '%d' '%b
+label=
+command=date +'  '%a' '%d' '%b
 interval=300
 
 [time]

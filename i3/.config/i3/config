@@ -15,12 +15,10 @@ set $ws9 "9:"
 set $ws10 "10:"
 
 font pango:DejaVu Sans Mono 10
-gaps inner 0
-gaps outer 0
 default_border pixel 0
+default_floating_border pixel 1
 for_window [class="mpv" instance="gl"] floating enable
 for_window [class="Blueman-manager" instance="blueman-manager"] floating enable
-no_focus [class="dmenu" instance="dmenu"]
 
 exec_always --no-startup-id picom --experimental-backends -bc
 exec --no-startup-id feh --bg-fill $wp
@@ -53,6 +51,7 @@ bindsym $mod+i gaps inner current plus 5
 bindsym $mod+o gaps outer current plus 5
 bindsym $mod+Shift+i gaps inner current minus 5
 bindsym $mod+Shift+o gaps outer current minus 5
+bindsym $mod+Shift+r restart
 
 bar {
     position top
@@ -72,25 +71,22 @@ bar {
 }
 
 # Plasma compatibility improvements
-for_window [window_role="pop-up"] floating enable
-for_window [window_role="task_dialog"] floating enable
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
-for_window [class="yakuake"] floating enable
-for_window [class="systemsettings"] floating enable
-for_window [class="plasmashell"] floating enable
-for_window [class="Plasma"] floating enable; border none
 for_window [title="plasma-desktop"] floating enable; border none
 for_window [title="win7"] floating enable; border none
+for_window [class="plasmashell"] floating enable
+for_window [class="Plasma"] floating enable; border none
+for_window [class="systemsettings"] floating enable
 for_window [class="krunner"] floating enable; border none
 for_window [class="Kmix"] floating enable; border none
 for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
 for_window [class="plasmashell" window_type="notification"] border none
-no_focus [class="plasmashell" window_type="notification"]
 for_window [class="plasmashell" window_type="dock"] border none
+no_focus [class="plasmashell" window_type="notification"]
 no_focus [class="plasmashell" window_type="dock"]
-for_window [class="plasmashell" window_type="on_screen_display"] border none
-no_focus [class="plasmashell" window_type="on_screen_display"]
 
 # change focus
 bindsym $mod+h focus left
@@ -103,14 +99,14 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+h move left 20
+bindsym $mod+Shift+j move down 20
+bindsym $mod+Shift+k move up 20
+bindsym $mod+Shift+l move right 20
+bindsym $mod+Shift+Left move left 20
+bindsym $mod+Shift+Down move down 20
+bindsym $mod+Shift+Up move up 20
+bindsym $mod+Shift+Right move right 20
 
 # resize focused window
 bindsym $mod+Mod1+h resize shrink width 20
@@ -140,6 +136,3 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart

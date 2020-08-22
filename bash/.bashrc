@@ -20,13 +20,15 @@ alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
 
-alias pip='pip3'
 alias p='sudo pacman'
 alias cpkg='pacman -Q | wc -l'
+alias pip='pip3'
+alias d='cd ~/.dotfiles'
 alias cfb='vim ~/.bashrc'
 alias cfv='vim ~/.vimrc'
 alias cfi3='vim ~/.config/i3/config'
-alias d='cd ~/.dotfiles'
+alias cfi3b='vim ~/.config/i3blocks/config'
+alias cfpi='vim ~/.config/picom/picom.conf'
 
 alias ytmp3="youtube-dl --ignore-errors -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 -o '~/Music/%(title)s.%(ext)s'"
 alias ytmp3p="youtube-dl --ignore-errors -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 -o '~/Music/%(playlist)s/%(playlist_index)s-%(title)s.%(ext)s'"

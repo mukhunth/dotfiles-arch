@@ -11,6 +11,7 @@ Parent=FALLBACK/
 ShowTerminalSizeHint=false
 
 [Scrolling]
+HighlightScrolledLines=false
 ScrollBarPosition=2
 
 [Terminal Features]
