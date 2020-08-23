@@ -22,9 +22,9 @@ goto $HOME:
     DELETE appropriate empty directories and files about to be symlinked
     exec stow * from .dotfiles, exec stow -t ~/ Home from /media/data
 install from mypkgs.txt
-enable fstrim.timer, tlp, sddm
+enable fstrim.timer, tlp, bluetooth, sddm
 
-AUR: yay picom-ibhagwan-git ttf-ms-fonts snapd optimus-manager optimus-manager-qt vscode
+AUR: yay snapd picom-ibhagwan-git ttf-ms-fonts optimus-manager optimus-manager-qt vscode
 SNAP: spotify pycharm
 
 TODO:
@@ -33,9 +33,8 @@ TODO:
 Type=XSession
 Exec=env KDEWM=/usr/bin/i3 /usr/bin/startplasma-x11
 DesktopNames=KDE
-Name=Plasma i3
+Name=Plasma-i3
 Comment=Plasma with i3
-X-KDE-PluginInfo-Version=5.19.4
 
 [add to /etc/pulse/daemon.conf:]
 realtime-priority = 9
@@ -44,6 +43,10 @@ rlimit-rttime = 1000000
 default-sample-format = float32le
 default-sample-rate = 48000
 
+[add to /etc/default/grub:]
+GRUB_COLOR_NORMAL="dark-gray/black"
+GRUB_COLOR_HIGHLIGHT="light-cyan/black"
+GRUB_FONT="/boot/grub/fonts/inconsolata36.pf2"
+
 Global theme:ChromeOS-Dark, Kvantum theme:Fluent-Dark
 https://color.firefox.com/?theme=XQAAAAIvAQAAAAAAAABBqYhm849SCia2CaaEGccwS-xNKlhK3D2G8NhCzoNehZAsRaWUnFE5tFEL1QWxFH84NfPtENF2LnXAc9v-S1w0x50aHvlYNBteMkcdczAJMjxkO5gFd0ibg6-IJ6ncJHiBW7XUMlw2momQDy4ArmYnbtGPdi2LCkQdQhIpCRq5G75jieo0FWdJrOIL4QsCx0ku00WqdHc1OiQz-GmuboGJ6h9viR9Hq3rvxRXMPoUhBMLERXDRaP_jiNgA
-

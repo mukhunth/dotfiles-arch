@@ -4,10 +4,11 @@ bash-completion
 xorg-server
 xorg-xinit
 alsa-utils
+pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
-tlp
 ntfs-3g
+tlp
 sddm
 plasma-desktop
 drkonqi
@@ -15,10 +16,12 @@ kwallet-pam
 kscreen
 plasma-nm
 plasma-pa
-sddm-kcm
-user-manager
 powerdevil
+user-manager
+kinfocenter
+sddm-kcm
 kde-gtk-config
+breeze-gtk
 gnome-themes-extra
 kvantum-qt5
 nvidia-settings
