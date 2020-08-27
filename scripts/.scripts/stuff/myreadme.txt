@@ -7,7 +7,7 @@ backup Steam Games to HDD
 PACSTRAP: linux linux-firmware nvidia nvidia-utils intel-ucode base base-devel vim
 ARCH-CHROOT:
 reflector [update mirrorlist]
-grub efibootmgr os-prober [install grub]
+[install systemd-boot]
 networkmanager [enable service]
 [set root passwd]
 
@@ -24,7 +24,7 @@ goto $HOME:
 install from mypkgs.txt
 enable fstrim.timer, tlp, bluetooth, sddm
 
-AUR: yay snapd picom-ibhagwan-git ttf-ms-fonts optimus-manager optimus-manager-qt vscode
+AUR: yay starship-bin snapd picom-ibhagwan-git ttf-ms-fonts optimus-manager optimus-manager-qt vscode
 SNAP: spotify pycharm
 
 TODO:
@@ -42,11 +42,6 @@ resample-method = speex-float-5
 rlimit-rttime = 1000000
 default-sample-format = float32le
 default-sample-rate = 48000
-
-[add to /etc/default/grub:]
-GRUB_COLOR_NORMAL="dark-gray/black"
-GRUB_COLOR_HIGHLIGHT="light-cyan/black"
-GRUB_FONT="/boot/grub/fonts/inconsolata36.pf2"
 
 Global theme:ChromeOS-Dark, Kvantum theme:Fluent-Dark
 https://color.firefox.com/?theme=XQAAAAIvAQAAAAAAAABBqYhm849SCia2CaaEGccwS-xNKlhK3D2G8NhCzoNehZAsRaWUnFE5tFEL1QWxFH84NfPtENF2LnXAc9v-S1w0x50aHvlYNBteMkcdczAJMjxkO5gFd0ibg6-IJ6ncJHiBW7XUMlw2momQDy4ArmYnbtGPdi2LCkQdQhIpCRq5G75jieo0FWdJrOIL4QsCx0ku00WqdHc1OiQz-GmuboGJ6h9viR9Hq3rvxRXMPoUhBMLERXDRaP_jiNgA

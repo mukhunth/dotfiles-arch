@@ -17,6 +17,8 @@ set $ws10 "10:"
 font pango:DejaVu Sans Mono 10
 default_border pixel 0
 default_floating_border pixel 1
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
 for_window [class="mpv" instance="gl"] floating enable
 for_window [class="Blueman-manager" instance="blueman-manager"] floating enable
 
@@ -81,8 +83,6 @@ for_window [class="krunner"] floating enable; border none
 for_window [class="Kmix"] floating enable; border none
 for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
-for_window [window_role="pop-up"] floating enable
-for_window [window_role="task_dialog"] floating enable
 for_window [class="plasmashell" window_type="notification"] border none
 for_window [class="plasmashell" window_type="dock"] border none
 no_focus [class="plasmashell" window_type="notification"]

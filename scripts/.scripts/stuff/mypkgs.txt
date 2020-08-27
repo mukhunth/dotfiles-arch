@@ -8,6 +8,8 @@ pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
 ntfs-3g
+sshfs
+dnsmasq
 tlp
 sddm
 plasma-desktop
