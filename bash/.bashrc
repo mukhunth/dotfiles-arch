@@ -45,4 +45,3 @@ else
         PS1='\[\e[1m\]\[\e[${B}\]\W \[\e[0m\]\[\e[${G}\]\$\[\e[0m\] '
         eval "$(starship init bash)"
 fi
-
