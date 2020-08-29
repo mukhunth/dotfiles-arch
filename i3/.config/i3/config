@@ -42,13 +42,13 @@ assign [class="dolphin"] $ws9
 assign [class="firefox"] $ws10
 
 bindsym $mod+q kill
-bindsym $mod+s [urgent=latest] focus
+bindsym $mod+u [urgent=latest] focus
 bindsym $mod+f fullscreen toggle
-floating_modifier $mod
+bindsym $mod+s split toggle
+bindsym $mod+Shift+s layout toggle split
 bindsym $mod+space focus mode_toggle
 bindsym $mod+Shift+space floating toggle
-bindsym $mod+e split toggle
-bindsym $mod+Shift+e layout toggle split
+floating_modifier $mod
 bindsym $mod+i gaps inner current plus 5
 bindsym $mod+o gaps outer current plus 5
 bindsym $mod+Shift+i gaps inner current minus 5

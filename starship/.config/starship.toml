@@ -6,7 +6,7 @@ style_failure="fg:#5fff5f"
 symbol="$"
 
 [directory]
-style="bold fg:#0087ff"
+style="bold fg:#0066c0"
 
 [username]
 style_user="bold blue"

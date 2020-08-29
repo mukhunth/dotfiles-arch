@@ -36,9 +36,9 @@ alias ytmp3="youtube-dl --ignore-errors -f bestaudio --extract-audio --audio-for
 alias ytmp3p="youtube-dl --ignore-errors -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 -o '~/Music/%(playlist)s/%(playlist_index)s-%(title)s.%(ext)s'"
 
 # Prompt
-R='38;2;255;95;0m'  #xterm202
-G='38;2;95;255;95m' #xterm083
-B='38;2;0;135;255m' #xterm033
+R='38;2;255;95;0m'
+G='38;2;95;255;95m'
+B='38;2;0;102;192m'
 if [[ ${EUID} == 0 ]]; then
         PS1='\[\e[1m\]\[\e[${B}\]\W \[\e[0m\]\[\e[${R}\]\$\[\e[0m\] '
 else
