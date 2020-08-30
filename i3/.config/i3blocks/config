@@ -28,7 +28,7 @@ interval=10
 signal=1
 LONG_FORMAT="${SYMB} ${VOL}% [${NAME}]"
 DEFAULT_COLOR="#ebdbb2"
-MUTED_COLOR="#a89984"
+MUTED_COLOR="#7b7061"
 
 [battery2]
 command=~/.scripts/i3blocks/battery2

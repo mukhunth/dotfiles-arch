@@ -21,17 +21,19 @@ alias ls='ls -h --color=auto --group-directories-first'
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
+alias pip='pip3'
+alias s='sudo '
 alias p='sudo pacman'
 alias cpkg='pacman -Q | wc -l'
-alias pip='pip3'
-alias cfb='vim ~/.bashrc'
-alias cfv='vim ~/.vimrc'
 
 alias d='cd ~/.dotfiles'
+alias cfb='vim ~/.bashrc'
+alias cfv='vim ~/.vimrc'
 alias cfi3='vim ~/.config/i3/config'
-alias cfi3b='vim ~/.config/i3blocks/config'
+alias cfi3b='nano ~/.config/i3blocks/config'
 alias cfpi='vim ~/.config/picom/picom.conf'
 
+alias mpm="mpv --no-audio-display --no-resume-playback"
 alias ytmp3="youtube-dl --ignore-errors -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 -o '~/Music/%(title)s.%(ext)s'"
 alias ytmp3p="youtube-dl --ignore-errors -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 -o '~/Music/%(playlist)s/%(playlist_index)s-%(title)s.%(ext)s'"
 

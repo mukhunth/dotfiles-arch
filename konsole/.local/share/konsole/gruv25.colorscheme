@@ -2,95 +2,95 @@
 Color=0,0,0
 
 [BackgroundFaint]
-Color=0,0,0
+Color=40,40,40
 
 [BackgroundIntense]
-Color=0,0,0
+Color=40,40,40
 
 [Color0]
-Color=21,21,21
+Color=40,40,40
 
 [Color0Faint]
-Color=21,21,21
+Color=40,40,40
 
 [Color0Intense]
-Color=80,80,80
+Color=146,131,116
 
 [Color1]
-Color=186,56,57
+Color=204,36,29
 
 [Color1Faint]
-Color=186,56,57
+Color=204,36,29
 
 [Color1Intense]
-Color=186,56,57
+Color=251,73,52
 
 [Color2]
-Color=155,189,80
+Color=152,151,26
 
 [Color2Faint]
-Color=155,189,80
+Color=152,151,26
 
 [Color2Intense]
-Color=155,189,80
+Color=184,187,38
 
 [Color3]
-Color=255,186,90
+Color=215,153,33
 
 [Color3Faint]
-Color=255,186,90
+Color=215,153,33
 
 [Color3Intense]
-Color=255,186,90
+Color=250,189,47
 
 [Color4]
-Color=96,168,198
+Color=69,133,136
 
 [Color4Faint]
-Color=96,168,198
+Color=69,133,136
 
 [Color4Intense]
-Color=96,168,198
+Color=131,165,152
 
 [Color5]
-Color=190,120,176
+Color=177,98,134
 
 [Color5Faint]
-Color=190,120,176
+Color=177,98,134
 
 [Color5Intense]
-Color=190,120,176
+Color=211,134,155
 
 [Color6]
-Color=105,202,186
+Color=104,157,106
 
 [Color6Faint]
-Color=105,202,186
+Color=104,157,106
 
 [Color6Intense]
-Color=105,202,186
+Color=142,192,124
 
 [Color7]
-Color=208,208,208
+Color=168,153,132
 
 [Color7Faint]
-Color=208,208,208
+Color=168,153,132
 
 [Color7Intense]
-Color=245,245,245
+Color=235,219,178
 
 [Foreground]
-Color=210,197,188
+Color=235,219,178
 
 [ForegroundFaint]
-Color=208,208,208
+Color=235,219,178
 
 [ForegroundIntense]
-Color=210,197,188
+Color=235,219,178
 
 [General]
 Blur=true
 ColorRandomization=false
-Description=mybase16
+Description=Gruvbox 25
 Opacity=0.75
 Wallpaper=

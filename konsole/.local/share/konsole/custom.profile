@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=Gruvbox_dark
+ColorScheme=gruv25
 Font=Inconsolata,13,-1,5,50,0,0,0,0,0
 
 [Cursor Options]
