@@ -3,6 +3,7 @@ man-pages
 bash-completion
 xorg-server
 xorg-xinit
+nvidia-utils
 alsa-utils
 pulseaudio
 pulseaudio-alsa

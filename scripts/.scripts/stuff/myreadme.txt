@@ -4,7 +4,7 @@ push any other important repos
 run syncthing
 backup Steam Games to HDD
 
-PACSTRAP: linux linux-firmware nvidia nvidia-utils intel-ucode base base-devel vim
+PACSTRAP: linux linux-firmware base base-devel intel-ucode nvidia vim
 ARCH-CHROOT:
 reflector [update mirrorlist]
 [install systemd-boot]
