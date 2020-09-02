@@ -24,7 +24,7 @@ goto $HOME:
 install from mypkgs.txt
 enable fstrim.timer, tlp, bluetooth, sddm
 
-AUR: yay starship-bin snapd picom-ibhagwan-git ttf-ms-fonts optimus-manager optimus-manager-qt vscode
+AUR: yay starship-bin snapd picom-git ttf-ms-fonts optimus-manager optimus-manager-qt vscode
 SNAP: spotify pycharm
 
 TODO:
