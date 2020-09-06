@@ -11,6 +11,11 @@ style="bold fg:#006ed0"
 [username]
 style_user="bold blue"
 
+[python]
+style="bold blue"
+symbol=" "
+scan_for_pyfiles=false
+python_binary="python3"
 
 #-------------Disabled modules-------------
 
@@ -69,9 +74,6 @@ disabled=true
 disabled=true
 
 [php]
-disabled=true
-
-[python]
 disabled=true
 
 [ruby]

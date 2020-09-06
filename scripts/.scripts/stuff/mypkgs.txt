@@ -3,6 +3,7 @@ man-pages
 bash-completion
 xorg-server
 xorg-xinit
+xorg-xinput
 nvidia-utils
 alsa-utils
 pulseaudio
@@ -58,3 +59,4 @@ youtube-dl
 ttf-inconsolata
 awesome-terminal-fonts
 powerline-fonts
+noto-fonts-emoji
