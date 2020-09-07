@@ -13,7 +13,7 @@ networkmanager [enable service]
 
 POST INSTALLATION:
 add user, edit sudoers file
-uncomment multilib and Color,add ILoveCandy in /etc/pacman.conf
+uncomment Color and ILoveCandy in /etc/pacman.conf
 add data partition to fstab, exec mount -a, give user ownership
 install xdg-user-dirs git stow
 exec xdg-user-dirs-update

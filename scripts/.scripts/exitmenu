@@ -1,8 +1,7 @@
 #!/bin/sh
 #exit menu in dmenu
 
-choice=$(echo -e "No\nSuspend\nLogout\nReboot\nShutdown" | dmenu -nf '#ff3300' -nb '#000000' -sf '#000000' -sb '#ff3300' -fn 'noto sans:size=11' -p 'Exit?' -b)
-[ $choice == "Suspend" ] && $(systemctl suspend)
+choice=$(echo -e "No\nLogout\nReboot\nShutdown" | dmenu -nf '#ff3300' -nb '#000000' -sf '#000000' -sb '#ff3300' -fn 'noto sans:size=11' -p 'Exit?' -b)
 [ $choice == "Logout" ] && $(qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout -1 -1 -1)
 [ $choice == "Reboot" ] && $(systemctl reboot)
 [ $choice == "Shutdown" ] && $(systemctl poweroff)

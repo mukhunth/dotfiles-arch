@@ -162,6 +162,7 @@ Zodiac (2007)
 
 ./Kubrick:
 2001 A Space Odyssey (1968)
+Dr.Strangelove
 
 ./Malick:
 Tree of Life (2011)

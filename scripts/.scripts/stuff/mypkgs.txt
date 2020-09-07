@@ -38,7 +38,7 @@ ark
 unrar
 spectacle
 firefox
-steam
+libreoffice-fresh
 mpv
 gthumb
 syncthing
