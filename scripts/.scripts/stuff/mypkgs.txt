@@ -38,14 +38,14 @@ ark
 unrar
 spectacle
 firefox
-libreoffice-fresh
 mpv
 gthumb
-syncthing
-qbittorrent
+libreoffice-fresh
 zathura
 zathura-djvu
 zathura-pdf-mupdf
+syncthing
+qbittorrent
 bashtop
 nvtop
 i3-gaps

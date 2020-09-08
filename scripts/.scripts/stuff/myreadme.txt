@@ -43,5 +43,6 @@ rlimit-rttime = 1000000
 default-sample-format = float32le
 default-sample-rate = 48000
 
+[uncomment gtk3 in /etc/profile.d/libreoffice-fresh.sh]
 Global theme:ChromeOS-Dark, Kvantum theme:Fluent-Dark
 https://color.firefox.com/?theme=XQAAAAIvAQAAAAAAAABBqYhm849SCia2CaaEGccwS-xNKlhK3D2G8NhCzoNehZAsRaWUnFE5tFEL1QWxFH84NfPtENF2LnXAc9v-S1w0x50aHvlYNBteMkcdczAJMjxkO5gFd0ibg6-IJ6ncJHiBW7XUMlw2momQDy4ArmYnbtGPdi2LCkQdQhIpCRq5G75jieo0FWdJrOIL4QsCx0ku00WqdHc1OiQz-GmuboGJ6h9viR9Hq3rvxRXMPoUhBMLERXDRaP_jiNgA

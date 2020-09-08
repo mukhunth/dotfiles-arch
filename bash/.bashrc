@@ -18,6 +18,8 @@ bind '"\e[B": history-search-forward'
 
 # Aliases
 alias ls='ls -h --color=auto --group-directories-first'
+alias cp='cp -i'
+alias mv='mv -i'
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
