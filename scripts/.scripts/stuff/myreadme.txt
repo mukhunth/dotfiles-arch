@@ -24,8 +24,8 @@ goto $HOME:
 install from mypkgs.txt
 enable fstrim.timer, tlp, bluetooth, sddm
 
-AUR: yay starship-bin snapd picom-git ttf-ms-fonts optimus-manager optimus-manager-qt vscode
-SNAP: spotify pycharm
+AUR: yay picom-git starship-bin visual-studio-code-bin ttf-ms-fonts optimus-manager optimus-manager-qt
+FLATPAK: spotify pycharm
 
 TODO:
 [disable Meta+Q, add plasma-i3.desktop in /usr/share/xsessions:]

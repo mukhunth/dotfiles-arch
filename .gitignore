@@ -2,3 +2,5 @@ konsole/.local/share/konsole/colors-konsole.colorscheme
 mpv/.config/mpv/watch_later
 vim/.vim/plugged
 vim/.vim/undofiles
+cmus/.config/cmus/*
+!cmus/.config/cmus/rc

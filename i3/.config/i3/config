@@ -32,9 +32,6 @@ bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nf '#
 bindsym $mod+q kill
 bindsym $mod+f fullscreen toggle
 bindsym $mod+c move position center
-bindsym $mod+b workspace back_and_forth
-bindsym $mod+n workspace prev
-bindsym $mod+m workspace next
 bindsym $mod+u [urgent=latest] focus
 bindsym $mod+s split toggle
 bindsym $mod+Shift+s layout toggle split
@@ -54,9 +51,12 @@ bindsym $mod+4 workspace $ws4
 bindsym $mod+5 workspace $ws5
 bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
-bindsym $mod+8 workspace $ws8 exec --no-startup-id pidof spotify || spotify
+bindsym $mod+8 workspace $ws8 exec --no-startup-id pidof spotify || flatpak run com.spotify.Client
 bindsym $mod+9 workspace $ws9 exec --no-startup-id pidof dolphin || dolphin
 bindsym $mod+0 workspace $ws10 exec --no-startup-id pidof firefox || firefox
+bindsym $mod+b workspace back_and_forth
+bindsym $mod+n workspace prev
+bindsym $mod+m workspace next
 for_window [class="Spotify"] move --no-auto-back-and-forth to workspace $ws8
 assign [class="dolphin"] $ws9
 assign [class="firefox"] $ws10
@@ -137,6 +137,9 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
+bindsym $mod+Shift+b move container to workspace back_and_forth, workspace back_and_forth
+bindsym $mod+Shift+n move container to workspace prev, workspace prev
+bindsym $mod+Shift+m move container to workspace next, workspace next
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
