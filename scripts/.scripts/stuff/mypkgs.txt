@@ -3,7 +3,7 @@ man-pages
 bash-completion
 pacman-contrib
 xorg-server
-xorg-xinit
+xorg-xmodmap
 xorg-xinput
 nvidia-utils
 alsa-utils
