@@ -4,7 +4,6 @@ bash-completion
 pacman-contrib
 xorg-server
 xorg-xmodmap
-xorg-xinput
 nvidia-utils
 alsa-utils
 pulseaudio

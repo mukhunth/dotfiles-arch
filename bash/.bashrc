@@ -25,7 +25,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias pip='pip3'
 alias p='sudo pacman'
-alias Syu='yay && echo -e "\e[1;34m:: Flatpak\e[0m" && flatpak update'
+alias Syu='yay && echo -e "\e[1;36m:: Running pacdiff\e[0m" && pacdiff && echo -e "\e[1;34m:: Flatpak\e[0m" && flatpak update'
 alias Sc='yay -Sc && yay --clean && echo -e "\e[1;34m:: Flatpak\e[0m" && flatpak uninstall --unused'
 alias pc='echo -e "\e[1;34mpacman\e[0m  : $(pacman -Q|wc -l)\n\e[1;34mAUR\e[0m     : $(pacman -Qm|wc -l)\n\e[1;36mflatpak\e[0m : $(flatpak list|wc -l)"'
 

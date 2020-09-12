@@ -42,6 +42,7 @@ resample-method = speex-float-5
 rlimit-rttime = 1000000
 default-sample-format = float32le
 default-sample-rate = 48000
+[disable touchscreen in /usr/share/X11/xorg.conf.d/40-libinput.conf]
 
 [cp .bash_profile from /etc/skel to /root, ln -s ~/.bashrc from /root]
 [touch /root/.vimrc:]
