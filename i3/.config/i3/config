@@ -30,6 +30,7 @@ bindsym $mod+d exec --no-startup-id dmenu_run -nf '#33ff00' -nb '#000000' -sf '#
 bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nf '#33ff00' -nb '#000000' -sf '#000000' -sb '#33ff00' -fn 'noto sans:size=11' -i -b"
 bindsym $mod+q kill
 bindsym $mod+f fullscreen toggle
+bindsym $mod+g exec --no-startup-id nvidiarun
 bindsym $mod+c move position center
 bindsym $mod+u [urgent=latest] focus
 bindsym $mod+s split toggle
