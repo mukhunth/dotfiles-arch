@@ -10,6 +10,7 @@ HISTSIZE= HISTFILESIZE=
 shopt -s autocd
 bind 'set show-all-if-unmodified on'
 set -o vi
+bind -m vi-insert 'Control-l: clear-screen'
 bind 'set show-mode-in-prompt on'
 bind 'set vi-cmd-mode-string "  "'
 bind 'set vi-ins-mode-string ""'
@@ -32,10 +33,10 @@ alias pc='echo -e "\e[1;34mpacman\e[0m  : $(pacman -Q|wc -l)\n\e[1;34mAUR\e[0m  
 alias d='cd ~/.dotfiles'
 alias cfb='vim ~/.bashrc'
 alias cfv='vim ~/.vimrc'
-alias cfr='vim ~/.config/ranger/rc.conf'
-alias cfcm='vim ~/.config/cmus/rc'
 alias cfi3='vim ~/.config/i3/config'
 alias cfi3b='nano ~/.config/i3blocks/config'
+alias cfr='vim ~/.config/ranger/rc.conf'
+alias cfcm='vim ~/.config/cmus/rc'
 alias cfpi='vim ~/.config/picom/picom.conf'
 
 alias mpva="mpv --no-audio-display --no-resume-playback"

@@ -3,8 +3,9 @@ man-pages
 bash-completion
 pacman-contrib
 xorg-server
-xorg-xmodmap
+xorg-xinit
 nvidia-utils
+nvidia-prime
 alsa-utils
 pulseaudio
 pulseaudio-alsa

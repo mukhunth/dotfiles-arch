@@ -28,7 +28,8 @@ AUR: yay picom-git starship-bin visual-studio-code-bin ttf-ms-fonts optimus-mana
 FLATPAK: spotify pycharm
 
 TODO:
-[disable Meta+Q, touch plasma-i3.desktop in /usr/share/xsessions:]
+[disable Meta+Q, add Ctrl+Alt+S for sleeping in plasma shortcuts and add Alt+L for screen locking]
+[touch plasma-i3.desktop in /usr/share/xsessions:]
 [Desktop Entry]
 Type=XSession
 Exec=env KDEWM=/usr/bin/i3 /usr/bin/startplasma-x11

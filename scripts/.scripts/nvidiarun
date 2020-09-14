@@ -1,5 +1,0 @@
-#!/bin/sh
-#run applications on nvidia card
-
-app=$(echo "" | dmenu -nf '#33ff00' -nb '#000000' -sf '#33ff00' -sb '#000000' -fn 'noto sans:size=11' -p 'App to run on the GPU:' -b)
-__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia __VK_LAYER_NV_optimus=NVIDIA_only $app

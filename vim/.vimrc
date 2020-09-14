@@ -33,8 +33,8 @@ autocmd BufRead,BufNewFile */i3/config set filetype=i3config
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'preservim/nerdtree'
 Plug 'mboughaba/i3config.vim'
 Plug 'morhetz/gruvbox'
 Plug 'nanotech/jellybeans.vim'

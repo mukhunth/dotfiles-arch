@@ -1,4 +1,6 @@
 [Appearance]
+AntiAliasFonts=true
+BoldIntense=true
 ColorScheme=gruv25
 Font=Inconsolata,13,-1,5,50,0,0,0,0,0
 
@@ -15,5 +17,7 @@ HighlightScrolledLines=false
 ScrollBarPosition=2
 
 [Terminal Features]
+BidiRenderingEnabled=true
 BlinkingCursorEnabled=true
+BlinkingTextEnabled=true
 FlowControlEnabled=false
