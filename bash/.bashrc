@@ -28,7 +28,7 @@ alias pip='pip3'
 alias p='sudo pacman'
 alias Sc='yay -Sc && yay --clean && echo -e "\e[1;34m:: Flatpak\e[0m" && flatpak uninstall --unused'
 alias Syu='yay && echo -e "\e[1;36m:: Running pacdiff\e[0m" && pacdiff && echo -e "\e[1;34m:: Flatpak\e[0m" && flatpak update'
-alias pc='echo -e "\e[1;34mpacman\e[0m  : $(pacman -Q|wc -l)\n\e[1;34mAUR\e[0m     : $(pacman -Qm|wc -l)\n\e[1;36mflatpak\e[0m : $(flatpak list|wc -l)"'
+alias pc='echo -e "\e[1;34mpacman\e[0m  : $(pacman -Q|wc -l)\n\e[0;34mAUR\e[0m     : $(pacman -Qm|wc -l)\n\e[0;34morphans\e[0m : $(pacman -Qtd|wc -l)\n\e[1;36mflatpak\e[0m : $(flatpak list|wc -l)"'
 
 alias d='cd ~/.dotfiles'
 alias cfb='vim ~/.bashrc'
