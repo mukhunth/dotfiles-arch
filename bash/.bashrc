@@ -6,16 +6,32 @@
 [[ $- != *i* ]] && return
 
 # Settings
-HISTSIZE= HISTFILESIZE=
-shopt -s autocd
-bind 'set show-all-if-unmodified on'
 set -o vi
-bind -m vi-insert 'Control-l: clear-screen'
-bind 'set show-mode-in-prompt on'
-bind 'set vi-cmd-mode-string "  "'
-bind 'set vi-ins-mode-string ""'
+shopt -s autocd
+shopt -s histappend
+shopt -s checkwinsize
+export HISTSIZE=-1
+export HISTFILESIZE=-1
+bind 'set show-all-if-unmodified on'
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
+bind -m vi-insert 'Control-l: clear-screen'
+bind -m vi-insert -x '"\eh": run-help'
+run-help() { help "$READLINE_LINE" 2>/dev/null || man "$READLINE_LINE"; }
+
+# Prompt
+R='38;2;255;95;0m'
+G='38;2;95;255;95m'
+B='38;2;0;102;192m'
+bind 'set show-mode-in-prompt on'
+bind 'set vi-ins-mode-string ""'
+bind 'set vi-cmd-mode-string "  "'
+if [[ ${EUID} == 0 ]]; then
+        PS1='\[\e[1m\]\[\e[${B}\]\W \[\e[0m\]\[\e[${R}\]\$\[\e[0m\] '
+else
+        PS1='\[\e[1m\]\[\e[${B}\]\W \[\e[0m\]\[\e[${G}\]\$\[\e[0m\] '
+        eval "$(starship init bash)"
+fi
 
 # Aliases
 alias ls='ls -h --color=auto --group-directories-first'
@@ -34,7 +50,7 @@ alias d='cd ~/.dotfiles'
 alias cfb='vim ~/.bashrc'
 alias cfv='vim ~/.vimrc'
 alias cfi3='vim ~/.config/i3/config'
-alias cfi3b='nano ~/.config/i3blocks/config'
+alias cfi3b='vim --clean ~/.config/i3blocks/config'
 alias cfr='vim ~/.config/ranger/rc.conf'
 alias cfcm='vim ~/.config/cmus/rc'
 alias cfpi='vim ~/.config/picom/picom.conf'
@@ -42,14 +58,3 @@ alias cfpi='vim ~/.config/picom/picom.conf'
 alias mpva="mpv --no-audio-display --no-resume-playback"
 alias ytmp3="youtube-dl -i -f bestaudio -x --audio-format mp3 --audio-quality 0 -o '~/Music/%(title)s.%(ext)s'"
 alias ytmp3p="youtube-dl -i -f bestaudio -x --audio-format mp3 --audio-quality 0 -o '~/Music/%(playlist)s/%(playlist_index)s-%(title)s.%(ext)s'"
-
-# Prompt
-R='38;2;255;95;0m'
-G='38;2;95;255;95m'
-B='38;2;0;102;192m'
-if [[ ${EUID} == 0 ]]; then
-        PS1='\[\e[1m\]\[\e[${B}\]\W \[\e[0m\]\[\e[${R}\]\$\[\e[0m\] '
-else
-        PS1='\[\e[1m\]\[\e[${B}\]\W \[\e[0m\]\[\e[${G}\]\$\[\e[0m\] '
-        eval "$(starship init bash)"
-fi

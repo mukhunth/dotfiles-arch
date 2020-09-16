@@ -36,7 +36,6 @@ blueman
 flatpak
 konsole
 gvim
-nano
 ranger
 dolphin
 ark
