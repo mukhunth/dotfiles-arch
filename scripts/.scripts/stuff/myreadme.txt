@@ -2,7 +2,6 @@ PRE REINSTALLATION:
 push .dotfiles, workspace, Wallpapers
 push any other important repos
 run syncthing
-backup Steam Games to HDD
 
 PACSTRAP: linux linux-firmware base base-devel intel-ucode nvidia vim
 ARCH-CHROOT:
@@ -26,6 +25,7 @@ enable fstrim.timer, tlp, bluetooth, sddm
 
 AUR: yay picom-git starship-bin visual-studio-code-bin ttf-ms-fonts optimus-manager optimus-manager-qt
 FLATPAK: spotify pycharm
+pip: pip-autoremove subliminal virtualenv jupyterlab
 
 TODO:
 [disable Meta+Q, add Ctrl+Alt+S for sleeping in plasma shortcuts and add Alt+L for screen locking]

@@ -23,7 +23,7 @@ command=free -h | awk '/^Mem:/ {print " RAM "$3}'
 interval=10
 
 [volume-pulseaudio]
-#command=~/.scripts/i3blocks/volume-pulseaudio
+command=~/.scripts/i3blocks/volume-pulseaudio
 LONG_FORMAT="${SYMB} ${VOL}%"
 #LONG_FORMAT="${SYMB} ${VOL}% [${NAME}]"
 DEFAULT_COLOR="#ebdbb2"

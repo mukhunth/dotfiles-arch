@@ -14,14 +14,13 @@ set noshowmode
 set showcmd
 set number relativenumber
 set splitbelow splitright
+set undofile
 set mouse=a
 map Q gq
 filetype plugin indent on
 syntax on
 
 "SETTINGS:
-set undodir=~/.vim/undofiles
-set undofile
 autocmd BufReadPost *
  \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
  \ |   exe "normal! g`\""
@@ -67,10 +66,3 @@ let g:airline_symbols = {'maxlinenr': ' '}
 "let g:airline_theme='base16_vim'
 let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
-
-"hi! link pythonBuiltin GruvboxBlue
-"hi! link pythonBuiltinFunc GruvboxBlue
-"hi! link pythonBuiltinObj GruvboxBlue
-"hi! link pythonConditional GruvboxPurple
-"hi! link pythonOperator GruvboxGreen
-"hi! link pythonRepeat GruvboxOrange
