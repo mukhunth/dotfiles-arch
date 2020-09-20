@@ -9,7 +9,6 @@
 set -o vi
 shopt -s autocd
 shopt -s histappend
-shopt -s checkwinsize
 export HISTSIZE=-1
 export HISTFILESIZE=-1
 bind 'set show-all-if-unmodified on'
