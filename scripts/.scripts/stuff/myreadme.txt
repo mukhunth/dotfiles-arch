@@ -3,7 +3,7 @@ push .dotfiles, workspace, Wallpapers
 push any other important repos
 run syncthing
 
-PACSTRAP: linux linux-firmware base base-devel intel-ucode nvidia vim
+PACSTRAP: base linux linux-firmware intel-ucode base-devel nvidia vim
 ARCH-CHROOT:
 reflector [update mirrorlist]
 [install systemd-boot]

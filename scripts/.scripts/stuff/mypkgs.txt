@@ -25,7 +25,6 @@ powerdevil
 user-manager
 kinfocenter
 sddm-kcm
-kde-gtk-config
 kdeconnect
 breeze-gtk
 gnome-themes-extra
