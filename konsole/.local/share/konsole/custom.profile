@@ -1,7 +1,7 @@
 [Appearance]
 AntiAliasFonts=true
 BoldIntense=true
-ColorScheme=gruv25
+ColorScheme=gruv15
 Font=Inconsolata,13,-1,5,50,0,0,0,0,0
 
 [Cursor Options]

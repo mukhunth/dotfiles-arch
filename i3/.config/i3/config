@@ -12,7 +12,7 @@ set $ws9 "9:  "
 set $ws10 "10:  "
 set $sep " | "
 set $ac #33ff00
-set $bg #00000099
+set $bg #000000cc
 #[80]cc [70]b3 [60]99 [50]80
 set $e exec --no-startup-id
 exec_always --no-startup-id picom --experimental-backends

@@ -3,19 +3,19 @@ push .dotfiles, workspace, Wallpapers
 push any other important repos
 run syncthing
 
-PACSTRAP: base linux linux-firmware intel-ucode base-devel nvidia vim
+PACSTRAP: base linux linux-firmware intel-ucode base-devel vim
 ARCH-CHROOT:
 reflector [update mirrorlist]
 [install systemd-boot]
-networkmanager [enable service]
+networkmanager xdg-user-dirs git stow
+[enable NetworkManager]
 [set root passwd]
 
 POST INSTALLATION:
 add user, edit sudoers file
+exec xdg-user-dirs-update
 uncomment Color and ILoveCandy in /etc/pacman.conf
 add data partition to fstab, exec mount -a, give user ownership
-install xdg-user-dirs git stow
-exec xdg-user-dirs-update
 goto $HOME:
     clone .dotfiles, workspace, Wallpapers
     DELETE appropriate empty directories and files about to be symlinked

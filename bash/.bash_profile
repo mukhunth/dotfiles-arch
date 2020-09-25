@@ -4,5 +4,5 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-export PATH="$HOME.scripts:$HOME.local/bin:$PATH"
+export PATH="$HOME/.scripts:$HOME/.local/bin:$PATH"
 export EDITOR=vim
