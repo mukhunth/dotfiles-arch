@@ -1,0 +1,11 @@
+#!/bin/sh
+
+PIC=$HOME/Pictures/Wallpapers/$1
+if [[ -f "$PIC" ]]; then
+        rm ~/Pictures/wp
+        ln -s $PIC ~/Pictures/wp
+        feh --bg-fill $PIC
+else
+        echo "Enter valid image"
+fi
+
