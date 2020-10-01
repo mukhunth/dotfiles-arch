@@ -1,9 +1,8 @@
 add_newline=false
 
 [character]
-style_success="fg:#5fff5f"
-style_failure="fg:#5fff5f"
-symbol="$"
+success_symbol="[\\$](fg:#5fff5f)"
+error_symbol="[\\$](fg:#5fff5f)"
 
 [directory]
 style="bold fg:#006ed0"
