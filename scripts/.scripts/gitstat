@@ -4,6 +4,6 @@
 echo -e '\n\e[1;35mDotfiles\e[0m'
 cd $HOME/.dotfiles && git status
 echo -e '\n\e[1;35mWorkspace\e[0m'
-cd $HOME/workspace && git status
+cd $HOME/workspace/sync && git status
 echo -e '\n\e[1;35mWallpapers\e[0m'
 cd $HOME/Pictures/Wallpapers && git status
