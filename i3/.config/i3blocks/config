@@ -31,10 +31,10 @@ MUTED_COLOR="#7b7061"
 interval=once
 signal=10
 
-[battery2]
-command=~/.scripts/i3blocks/battery2
-markup=pango
-interval=30
+#[battery2]
+#command=~/.scripts/i3blocks/battery2
+#markup=pango
+#interval=30
 
 [date]
 label=
