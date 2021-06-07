@@ -37,6 +37,7 @@ nvidia-settings
 blueman
 flatpak
 konsole
+starship
 gvim
 ranger
 dolphin

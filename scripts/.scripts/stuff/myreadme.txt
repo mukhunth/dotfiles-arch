@@ -23,7 +23,7 @@ goto $HOME:
 install from mypkgs.txt
 enable fstrim.timer, tlp, bluetooth, sddm
 
-AUR: yay picom-git starship-bin visual-studio-code-bin ttf-ms-fonts optimus-manager optimus-manager-qt
+AUR: yay picom-git visual-studio-code-bin ttf-ms-fonts optimus-manager optimus-manager-qt
 FLATPAK: spotify pycharm
 pip: pip-autoremove subliminal virtualenv jupyterlab
 
