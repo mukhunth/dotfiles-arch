@@ -19,7 +19,7 @@ add data partition to fstab, exec mount -a, give user ownership
 goto $HOME:
     clone .dotfiles, workspace, Wallpapers
     DELETE appropriate empty directories and files about to be symlinked
-    exec stow * from .dotfiles, exec stow -t ~/ Home from /media/data
+    exec stow * from .dotfiles, exec ln -s /media/data/[required folders]
 install from mypkgs.txt
 enable fstrim.timer, tlp, bluetooth, sddm
 
