@@ -9,7 +9,6 @@ Beauty and the Beast (2017)
 Black Mass (2015)
 Bourne Series (2002-2016)
 Boyhood (2014)
-Chhichhore (2019) 720p WEBRip x264 999MB-Pahe.in.mkv
 City of God (2002)
 Dallas Buyer's Club (2013)
 Darkest Hour (2017)
@@ -19,8 +18,7 @@ Eternal Sunshine of the Spotless Mind (2004)
 Eye in the Sky (2015)
 Fifty Shades (2015-2018)
 Ford V Ferrari (2019)
-Gangs.of.Wasseypur.Part1.2012.720p.BluRay.x264-Pahe.in.mkv
-Gangs.of.Wasseypur.Part2.2012.720p.BluRay.x264-Pahe.in.mkv
+Gangs of Wasseypur 1&2 (2012)
 Gifted (2017)
 Good Will Hunting (1997)
 Heat (1995)
@@ -28,6 +26,7 @@ Her (2013)
 Hobbit (2012-2014)
 Indiana Jones (1981-2008)
 James Bond (2006-2015)
+KAITHI 2019.1080p.AMZN.WEB-DL.DD+5.1.x264.Esubs - TMV.mkv
 La Vie En Rose (2007)
 Leon The Professional (1994)
 Lord of The Rings (2001-2003)
@@ -102,7 +101,6 @@ Samsara (2011)
 
 ~Classics:
 12 Angry Men (1957)
-Anatomy Of A Murder (1959)
 Apocalypse Now (1979)
 Casablanca (1942)
 Citizen Kane (1941)
@@ -116,6 +114,7 @@ The Good, The Bad, The Ugly (1966)
 Anderson
 Cameron
 Chazelle
+checkout.txt
 Coen Brothers
 Fincher
 Kubrick
@@ -125,75 +124,3 @@ Scorsese
 Spielberg
 Tarantino
 Villeneuve
-
-./Anderson:
-Bottle Rocket (1996)
-Fantastic Mr.Fox (2009)
-Isle Of Dogs (2018)
-Moonrise Kingdom (2012)
-Rushmore (1998)
-The Darjeeling Limited (2007)
-The Grand Budapest Hotel (2014)
-The Life Aquatic with Steve Zissou (2001)
-The Royal Tenenbaums (2004)
-
-./Cameron:
-Avatar (2009)
-Titanic (1997)
-
-./Chazelle:
-First Man (2018)
-La La Land (2016)
-Whiplash (2014)
-
-./Coen Brothers:
-Fargo (1996)
-Hail, Caesar! (2016)
-No Country for Old Men (2007)
-O Brother, Where Art Thou (2000)
-The Big Lebowski (1998)
-The Man Who Wasn't There (2001)
-True Grit (2010)
-Miller's Crossing (1990)
-
-./Fincher:
-Fight Club (1999)
-Zodiac (2007)
-
-./Kubrick:
-2001 A Space Odyssey (1968)
-Dr.Strangelove
-
-./Malick:
-Tree of Life (2011)
-
-./Nolan:
-Dunkirk (2017)
-Following (1998)
-Inception (2010)
-Insomnia (2002)
-Interstellar (2014)
-Memento (2000)
-The Prestige (2006)
-
-./Scorsese:
-Goodfellas (1990)
-The Irishman (2019)
-
-./Spielberg:
-Catch Me If You Can (2002)
-Duel (1971)
-E.T The Extra Terrestrial (1982)
-Lincoln (2012)
-Ready Player One (2018)
-Saving Private Ryan (1998)
-Schindler's List (1993)
-
-./Tarantino:
-Pulp Fiction (1994)
-The Hateful Eight (2015)
-
-./Villeneuve:
-Arrival (2016)
-Blade Runner (1982, 2017)
-Prisoners (2013)
