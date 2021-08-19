@@ -35,6 +35,7 @@ kvantum-qt5
 gnome-disk-utility
 nvidia-settings
 blueman
+piper
 flatpak
 konsole
 starship

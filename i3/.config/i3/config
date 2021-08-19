@@ -64,6 +64,7 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 for_window [class="mpv" instance="gl"] floating enable, resize set height 1080, move position center
 for_window [class="Blueman-manager" instance="blueman-manager"] floating enable, move position center
+for_window [class="Piper" instance="piper"] floating enable, move position center
 
 bar {
     position top
