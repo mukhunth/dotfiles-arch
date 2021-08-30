@@ -16,7 +16,7 @@ set $bg #000000cc
 #[80]cc [70]b3 [60]99 [50]80
 set $e exec --no-startup-id
 exec_always --no-startup-id picom --experimental-backends
-exec_always --no-startup-id feh --bg-fill $HOME/Pictures/wp
+exec_always --no-startup-id feh --bg-fill $HOME/.wp
 bindsym $alt+e $e exitmenu
 bindsym $mod+Return $e konsole
 bindsym $mod+r $e pkill -SIGRTMIN+5 i3blocks
