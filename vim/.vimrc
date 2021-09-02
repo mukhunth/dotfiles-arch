@@ -9,7 +9,6 @@ set incsearch
 set tabstop=4
 set softtabstop=4
 set expandtab
-"set clipboard=unnamedplus
 set noshowmode
 set showcmd
 set number relativenumber
@@ -27,13 +26,19 @@ autocmd BufReadPost *
  \ | endif
 autocmd BufWritePre * %s/\s\+$//e
 autocmd BufRead,BufNewFile */i3/config set filetype=i3config
+if has('win32') || has('win64')
+    set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
+    set undodir=$HOME/.vim/undo
+    set backspace=indent,eol,start
+    set laststatus=2
+    set ruler
+endif
 
 "PLUGINS:
-call plug#begin('~/.vim/plugged')
+call plug#begin('$HOME/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
-Plug 'preservim/nerdtree'
 Plug 'mboughaba/i3config.vim'
 Plug 'morhetz/gruvbox'
 Plug 'nanotech/jellybeans.vim'
@@ -46,20 +51,21 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <leader>s :nohlsearch <Enter>
-map <leader>n :NERDTreeToggle <CR>
 
 "APPEARANCE:
 set termguicolors
 set background=dark
 if has("gui_running")
-    set guifont=Inconsolata\ Regular\ 12
+    if has("gui_gtk2")
+        set guifont=Inconsolata\ Regular\ 12
+    elseif has("gui_win32")
+        set guifont=Cascadia\ Code\ Pl:h12
+    endif
 else
     au VimEnter * hi Normal guibg=NONE ctermbg=NONE
     au VimEnter * hi LineNr guibg=NONE ctermbg=NONE
     let g:jellybeans_overrides = {'background': { 'guibg': 'none', 'ctermbg': 'none', '256ctermbg': 'none' }}
 endif
-let g:NERDTreeDirArrowExpandable=''
-let g:NERDTreeDirArrowCollapsible=''
 let g:airline_powerline_fonts=1
 let g:airline_symbols = {'maxlinenr': ' '}
 "let g:airline#extensions#tabline#enabled=1
