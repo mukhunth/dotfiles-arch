@@ -45,7 +45,7 @@ Plug 'nanotech/jellybeans.vim'
 call plug#end()
 
 "MAPPINGS:
-let mapleader=" "
+let mapleader=' '
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -55,11 +55,12 @@ map <leader>s :nohlsearch <Enter>
 "APPEARANCE:
 set termguicolors
 set background=dark
-if has("gui_running")
-    if has("gui_gtk2")
-        set guifont=Inconsolata\ Regular\ 12
-    elseif has("gui_win32")
-        set guifont=Cascadia\ Code\ Pl:h12
+if has('gui_running')
+    if has('gui_gtk')
+        set guifont=Inconsolata\ Regular\ 13
+    elseif has('gui_win32') || has('gui_win64')
+        set guifont=Cascadia\ Code\ Pl:h11
+        au GUIEnter * simalt ~x
     endif
 else
     au VimEnter * hi Normal guibg=NONE ctermbg=NONE
